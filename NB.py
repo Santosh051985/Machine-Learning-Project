@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 ######### Iris Data Set ########################
-iris = pd.read_csv("c:\\Users\\asus\\Desktop\\Python Codes\\Naive Bayes\\iris.csv")
+iris = pd.read_csv("c:\\Users\\HP\\Desktop\\iris.csv")
 from sklearn.naive_bayes import GaussianNB
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.model_selection import train_test_split
