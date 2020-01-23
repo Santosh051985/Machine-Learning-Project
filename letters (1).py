@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np 
 import seaborn as sns
 
-letters = pd.read_csv("C:\\Users\\asus\\Desktop\\Python Codes\\Support Vector Machines\\letters.csv")
+letters = pd.read_csv("C:\\Users\\HP\\Desktop\\letters.csv")
 letters.head()
 letters.describe()
 letters.columns
