@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-wbcd = pd.read_csv("F:\\DS\\Python Codes\\Neural Network\\wbcd.csv")
+wbcd = pd.read_csv("C:\\Users\\HP\\Desktop\\wbcd.csv")
 wbcd.columns
 wbcd.drop(["id"],axis=1,inplace=True) # Dropping the uncessary column
 wbcd.isnull().sum() # No missing values 
@@ -10,13 +10,10 @@ wbcd.isnull().sum() # No missing values
 wbcd.loc[wbcd.diagnosis=="B","diagnosis"] = 1
 wbcd.loc[wbcd.diagnosis=="M","diagnosis"] = 0
 
-
 X = wbcd.drop(["diagnosis"],axis=1)
 Y = wbcd["diagnosis"]
 plt.hist(Y)
 wbcd.diagnosis.value_counts()
-
-
 
 from sklearn.cross_validation import train_test_split
 
