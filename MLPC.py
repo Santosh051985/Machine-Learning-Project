@@ -1,8 +1,9 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-
+# Read CSV File 
 wbcd = pd.read_csv("C:\\Users\\HP\\Desktop\\wbcd.csv")
+# Shows features of dataset
 wbcd.columns
 wbcd.drop(["id"],axis=1,inplace=True) # Dropping the uncessary column
 wbcd.isnull().sum() # No missing values 
