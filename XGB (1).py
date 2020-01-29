@@ -28,7 +28,3 @@ test_acc = np.mean(test_pred==test_y) #0.75
 # Variable importance plot 
 from xgboost import plot_importance
 plot_importance(xgb1)
-
-
-
-
