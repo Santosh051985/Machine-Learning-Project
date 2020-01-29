@@ -1,12 +1,11 @@
-# conda install -c conda-forge textblob
-
+# Iclude Library
 import pandas as pd
 import numpy as np
 from sklearn.feature_extraction.text import CountVectorizer,TfidfTransformer
 
 # Loading the data set
 
-email_data = pd.read_csv("c:\\Users\\asus\\Desktop\\Python Codes\\Naive Bayes\\ham_spam.csv",encoding = "ISO-8859-1")
+email_data = pd.read_csv("c:\\Users\\HP\\Desktop\\R_Progs\\ham_spam.csv",encoding = "ISO-8859-1")
 
 # cleaning data 
 import re
