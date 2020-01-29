@@ -12,7 +12,6 @@ op_column  = ["Species"]
 
 # Splitting data into train and test
 Xtrain,Xtest,ytrain,ytest = train_test_split(iris[ip_columns],iris[op_column],test_size=0.3, random_state=0)
-
 ignb = GaussianNB()
 imnb = MultinomialNB()
 
@@ -20,12 +19,10 @@ imnb = MultinomialNB()
 pred_gnb = ignb.fit(Xtrain,ytrain).predict(Xtest)
 pred_mnb = imnb.fit(Xtrain,ytrain).predict(Xtest)
 
-
 # Confusion matrix GaussianNB model
 confusion_matrix(ytest,pred_gnb) # GaussianNB model
 pd.crosstab(ytest.values.flatten(),pred_gnb) # confusion matrix using 
 np.mean(pred_gnb==ytest.values.flatten()) # 100%
-
 
 # Confusion matrix GaussianNB model
 confusion_matrix(ytest,pred_mnb) # GaussianNB model
@@ -33,9 +30,6 @@ pd.crosstab(ytest.values.flatten(),pred_mnb) # confusion matrix using
 np.mean(pred_mnb==ytest.values.flatten()) # 60%
 
 confusion_matrix(ytest,pred_mnb) # Multinomal model
-
-
-
 ############# Reading the Diabetes Data #################
 Diabetes = pd.read_csv("c:\\Users\\asus\\Desktop\\Python Codes\\Naive Bayes\\Diabetes_RF.csv")
 colnames = list(Diabetes.columns)
