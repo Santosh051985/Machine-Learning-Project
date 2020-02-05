@@ -20,9 +20,9 @@ pred_gnb = ignb.fit(Xtrain,ytrain).predict(Xtest)
 pred_mnb = imnb.fit(Xtrain,ytrain).predict(Xtest)
 
 # Confusion matrix GaussianNB model
-confusion_matrix(ytest,pred_gnb) # GaussianNB model
+confusion_matrix(ytest,pred_gnb) 
 pd.crosstab(ytest.values.flatten(),pred_gnb) # confusion matrix using 
-np.mean(pred_gnb==ytest.values.flatten()) # 100%
+np.mean(pred_gnb==ytest.values.flatten()) 
 
 # Confusion matrix GaussianNB model
 confusion_matrix(ytest,pred_mnb) # GaussianNB model
