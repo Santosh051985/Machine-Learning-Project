@@ -5,8 +5,10 @@ import matplotlib.pyplot as plt
 wbcd = pd.read_csv("C:\\Users\\HP\\Desktop\\wbcd.csv")
 # Shows features of dataset
 wbcd.columns
-wbcd.drop(["id"],axis=1,inplace=True) # Dropping the uncessary column
-wbcd.isnull().sum() # No missing values 
+# Dropping the uncessary column which has not involve in calculation
+wbcd.drop(["id"],axis=1,inplace=True) 
+# Handle No missing values 
+wbcd.isnull().sum() 
 
 wbcd.loc[wbcd.diagnosis=="B","diagnosis"] = 1
 wbcd.loc[wbcd.diagnosis=="M","diagnosis"] = 0
