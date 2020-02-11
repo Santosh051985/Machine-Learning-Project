@@ -20,10 +20,10 @@ xgb1 = xgb.XGBClassifier(n_estimators=2000,learning_rate=0.3)
 xgb1.fit(train_x,train_y)
 train_pred = xgb1.predict(train_x)
 import numpy as np
-train_acc = np.mean(train_pred==train_y) # 90.94
+train_acc = np.mean(train_pred==train_y)                      # 90.94 Calculate Mean
 test_pred = xgb1.predict(test_x)
-test_acc = np.mean(test_pred==test_y) #0.75
-
+test_acc = np.mean(test_pred==test_y)                   #0.75 Calculate Mean
+    
 # Variable importance plot 
 from xgboost import plot_importance
 plot_importance(xgb1)
