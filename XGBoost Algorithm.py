@@ -15,7 +15,7 @@ from sklearn.model_selection import train_test_split
 X,y=ind_dia.iloc[:,:8],ind_dia.iloc[:,8]
 train_x,test_x,train_y,test_y = train_test_split(X,y,test_size=0.28,random_state= 10)
 
-### Preparing XGB classifier 
+### Preparing XGBoost classifier 
 xgb1 = xgb.XGBClassifier(n_estimators=2000,learning_rate=0.3)
 xgb1.fit(train_x,train_y)
 train_pred = xgb1.predict(train_x)
