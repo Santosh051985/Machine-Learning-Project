@@ -22,7 +22,7 @@ train_pred = xgb1.predict(train_x)
 import numpy as np
 train_acc = np.mean(train_pred==train_y)                      # 90.94 Calculate Mean
 test_pred = xgb1.predict(test_x)
-test_acc = np.mean(test_pred==test_y)                   #0.75 Calculate Mean
+test_acc = np.mean(test_pred==test_y)          #0.75 Calculate Mean
     
 # Variable importance plot 
 from xgboost import plot_importance
