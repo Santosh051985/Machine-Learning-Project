@@ -1,4 +1,6 @@
+# imporing XGBOOST for enhance accuracy
 import xgboost as xgb
+# importing Pandas for manipulate data
 import pandas as pd
 ind_dia = pd.read_csv("https://archive.ics.uci.edu/ml/machine-learning-databases/pima-indians-diabetes/pima-indians-diabetes.data",
                       names=["x1","x2","x3","x4","x5","x6","x7","x8","x9"])
