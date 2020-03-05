@@ -34,3 +34,7 @@ print('Intercept Vale is ' , regressor.intercept_)
 #For retrieving the slope:
 print("Coefficient value is  ",regressor.coef_)
 
+y_pred = regressor.predict(X_test)
+df_p = pd.DataFrame({'Actual': y_test.flatten(), 'Predicted': y_pred.flatten()})
+df_p
+df_p.head(3)
