@@ -27,5 +27,21 @@ regressor_d_t = LinearRegression()
 regressor_d_t.fit(X_train, y_train) 
 #To retrieve the intercept:
 print('Intercept Vale is ' , regressor_d_t.intercept_)
+
+y_pred = regressor_d_t.predict(X_test)
+df_p = pd.DataFrame({'Actual': y_test.flatten(), 'Predicted': y_pred.flatten()})
+df_p
+df_p.head(5)
+df1 = df_p.head(3)
+df1.plot(kind='bar',figsize=(16,10))
+plt.grid(which='major', linestyle='-', linewidth='0.58', color='green')
+plt.grid(which='minor', linestyle=':', linewidth='0.58', color='black')
+plt.show()
+
+plt.scatter(X_test, y_test,  color='gray')
+plt.plot(X_test, y_pred, color='red', linewidth=2)
+plt.show()
+
+
 #For retrieving the slope:
 print("Coefficient value is  ",regressor_d_t.coef_)
