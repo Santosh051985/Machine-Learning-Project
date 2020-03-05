@@ -45,3 +45,6 @@ plt.show()
 
 #For retrieving the slope:
 print("Coefficient value is  ",regressor_d_t.coef_)
+print('Mean Absolute Error:', metrics.mean_absolute_error(y_test, y_pred))  
+print('Mean Squared Error:', metrics.mean_squared_error(y_test, y_pred))  
+print('Root Mean Squared Error:', np.sqrt(metrics.mean_squared_error(y_test, y_pred)))
