@@ -7,3 +7,5 @@ from sklearn.linear_model import LinearRegression
 from sklearn import metrics
 Deli_fr =pd.read_csv("delivery_time.csv")
 Deli_fr.head()
+Deli_fr.describe()
+Deli_fr.info()
