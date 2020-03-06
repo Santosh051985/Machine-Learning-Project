@@ -81,3 +81,17 @@ print(mse)
 
 ## calculating score  =  0.5770007444041023
 ridgeReg.score(X_test,y_test) 
+### Lasso Regression
+from sklearn.linear_model import Lasso
+
+lassoReg = Lasso(alpha=0.05, normalize=True)
+
+lassoReg.fit(X_train,y_train)
+
+pred_lasso = lassoReg.predict(X_test)
+
+# calculating mse = 18569.747619585934
+mse = np.mean((y_pred - y_test)**2) 
+print(mse)
+#Calculate R^2 Error = 0.5125716544323572
+lassoReg.score(X_test,y_test)
