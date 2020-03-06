@@ -51,3 +51,33 @@ plt.show()
 print('Mean Absolute Error:', metrics.mean_absolute_error(y_test, y_pred))  
 print('Mean Squared Error:', metrics.mean_squared_error(y_test, y_pred))  
 print('Root Mean Squared Error:', np.sqrt(metrics.mean_squared_error(y_test, y_pred)))
+
+# calculating mse =18569.747619585934
+mse = np.mean((y_pred - y_test)**2) 
+print(mse)
+# Calculate rmse score = 0.5118476943631607
+regressor.score(X_test,y_test)
+## Transformation  for input variables for getting better R^2 value for the model .
+
+# Ridge Regression
+from sklearn.linear_model import Ridge
+
+## training the model
+
+ridgeReg = Ridge(alpha=0.05, normalize=True)
+
+ridgeReg.fit(X_train,y_train)
+
+#To retrieve the intercept:
+print('Intercept Vale is ' , ridgeReg.intercept_)
+#For retrieving the slope:
+print("Coefficient value is  ",ridgeReg.coef_)
+
+pred_rig = ridgeReg.predict(X_test)
+
+##calculating mse =18569.747619585934
+mse = np.mean((y_pred - y_test)**2)
+print(mse)
+
+## calculating score  =  0.5770007444041023
+ridgeReg.score(X_test,y_test) 
