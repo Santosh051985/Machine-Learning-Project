@@ -13,5 +13,6 @@ premium_c =pd.get_dummies(com_df1['premium'], prefix='premium')
 p_com_df =pd.concat([com_df1,cd_c,multi_c,premium_c], axis=1)
 p_com_df1 = p_com_df.drop(['cd','cd1','multi','premium'], axis=1)
 sns.set_style("whitegrid");
-sns.pairplot(p_com_df1, hue="price", height=16);
+sns.pairplot(p_com_df1, hue="price", height=4);
 plt.show()
+
