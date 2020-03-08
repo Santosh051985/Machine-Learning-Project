@@ -1,4 +1,6 @@
+# Import pandas  library
 import pandas as np
+# Import numpy library
 import numpy as np
 import matplotlib.pyplot as plt
 com_df = pd.read_csv("Computer_Data.csv")
