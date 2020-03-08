@@ -23,7 +23,7 @@ X = Deli_fr['Sorting _Time'].values.reshape(-1,1)
 y = Deli_fr['Delivery_Time'].values.reshape(-1,1)
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)
 regressor_d_t = LinearRegression()  
-#training the algorithm
+#training the Linear Regressin Algorithm
 regressor_d_t.fit(X_train, y_train) 
 #To retrieve the intercept:
 print('Intercept Vale is ' , regressor_d_t.intercept_)
