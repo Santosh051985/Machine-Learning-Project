@@ -5,3 +5,4 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 import sklearn.model_selection as train_test_split
+df = pd.read_csv('sms_raw_NB.csv')
