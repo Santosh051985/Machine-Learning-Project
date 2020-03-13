@@ -1,3 +1,4 @@
+# Import Pandas for data manipulation
 import pandas as pd
 import matplotlib.pyplot  as plt
 import numpy as np
