@@ -1,4 +1,6 @@
+# Import Pandas library for data manipulation
 import pandas as pd
+# Import matplotlib library for Data Visualization
 import matplotlib.pyplot  as plt
 import numpy as np
 df = pd.read_csv("calories_consumed.csv")
