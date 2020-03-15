@@ -1,6 +1,6 @@
 # Import Pandas library for data manipulation
 import pandas as pd
-# Import matplotlib library for Data Visualization
+# Import matplotlib library for Data Visualization of data
 import matplotlib.pyplot  as plt
 #Import numpy for numerical calculation
 import numpy as np
