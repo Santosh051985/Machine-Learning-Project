@@ -1,5 +1,6 @@
 # Import Pandas for data manipulation
 import pandas as pd
+#Import Matplotlib
 import matplotlib.pyplot  as plt
 import numpy as np
 import seaborn as seabornInstance
