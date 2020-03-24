@@ -9,7 +9,8 @@ ind_dia.columns = ["Num_preg","Plasme_glucose","BP","TskinT","serum","BMI","DPF"
 
 ind_dia.head(10)
 # Checking any missing values were there in our data 
-ind_dia.isnull().sum() # There were no missing values in our data
+ind_dia.isnull().sum() 
+# There were no missing values in our data
 
 #### Implementing XGB classifier for predicting whether patient will have diabetes or not
 
