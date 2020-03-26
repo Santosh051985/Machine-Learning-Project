@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 wbcd = pd.read_csv("C:\\Users\\HP\\Desktop\\wbcd.csv")
 # Shows features of dataset
 wbcd.columns
-# Dropping the uncessary column which has not involve in calculation
+# Dropping the  column which has not involve in calculation
 wbcd.drop(["id"],axis=1,inplace=True) 
 # Handle No missing values 
 wbcd.isnull().sum() 
