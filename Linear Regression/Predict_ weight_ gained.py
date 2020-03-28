@@ -2,7 +2,7 @@
 import pandas as pd
 # Import matplotlib library for Data Visualization of data
 import matplotlib.pyplot  as plt
-#Import numpy for numerical calculation on dataset
+#Import numpy for numerical calculation on dataset ##
 import numpy as np
 df = pd.read_csv("calories_consumed.csv")
 df.head()
