@@ -9,7 +9,7 @@ wbcd = pd.read_csv("C:\\Users\\HP\\Desktop\\wbcd.csv")
 wbcd.columns
 # Dropping the  column which has not involve in calculation
 wbcd.drop(["id"],axis=1,inplace=True) 
-# Handle No missing values 
+# Handle No missing values ######
 wbcd.isnull().sum() 
 
 wbcd.loc[wbcd.diagnosis=="B","diagnosis"] = 1
