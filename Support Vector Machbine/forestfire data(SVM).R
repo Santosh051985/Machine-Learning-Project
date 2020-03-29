@@ -7,7 +7,7 @@ View(forestfires)
 
 hist(forestfires$area)
 rug(forestfires$area)
-
+# Normalization of Dataset
 normalise <- function(x) {
   return((x - min(x)) / (max(x) - min(x)))  # subtract the min value in x and divide by the range of values in x.
 }
