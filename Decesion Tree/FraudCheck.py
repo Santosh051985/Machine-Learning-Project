@@ -3,7 +3,7 @@ import numpy as np       ## For statistics and calculations
 import matplotlib.pyplot as plt  ## For plotting
 
 ## Load the dataset
-FChk = pd.read_csv("E:\\zz\\XLR_Data Science\\Assisgnments\\12. Decision Trees\\Fraud_check.csv")
+FChk = pd.read_csv("E:\\zz\\XLR_Data Science\\Assisgnments\\Decision Trees\\Fraud_check.csv")
 FChk.head()    ## Gives the first five rows as the output
 
 ## Creating dummy variables for the given categorical data in the input
