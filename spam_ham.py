@@ -6,7 +6,7 @@ from sklearn.feature_extraction.text import CountVectorizer,TfidfTransformer
 # Loading the data set
 email_data = pd.read_csv("c:\\Users\\HP\\Desktop\\R_Progs\\ham_spam.csv",encoding = "ISO-8859-1")
 
-# cleaning  and preprocessing of raw data 
+# cleaning  and preprocessing
 import re
 stop_words = []
 with open("C:\\Users\\asus\\Desktop\\Python Codes\\Naive Bayes\\stop.txt") as f:
