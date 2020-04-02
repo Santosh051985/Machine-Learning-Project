@@ -109,7 +109,6 @@ salary = pd.concat([salary,sal_dummies],axis=1)
 
 salary["cat"] = 0
 
-
 salary.loc[salary.Salary==" <=50K","cat"] = 1
 salary.Salary.value_counts()
 salary.cat.value_counts()
