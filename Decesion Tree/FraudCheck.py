@@ -54,3 +54,5 @@ pd.crosstab(preds,test[target])     ## Getting the two-way table to understand t
 
 ## Accuracy
 np.mean(preds==test.FC)      ## 100%
+
+##
