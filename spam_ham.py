@@ -68,7 +68,7 @@ test_emails_matrix = emails_bow.transform(email_test.text)
 # Learning Term weighting and normalizing on entire emails
 tfidf_transformer = TfidfTransformer().fit(all_emails_matrix)
 
-# Preparing TFIDF for train emails
+# Preparing TFIDF for train emails###
 train_tfidf = tfidf_transformer.transform(train_emails_matrix)
 
 train_tfidf.shape # (3891, 6661)
