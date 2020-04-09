@@ -1,9 +1,8 @@
-# Import all  packages
-
+# Import all  Basic Packages
 import pandas as pd 
 import numpy as np 
 import seaborn as sns
-
+import matplotlib.pyplot as plt
 salary_train=pd.read_csv("file:///F:/ASSIGNMENTS/support vector machines/SalaryData_Train(1).csv")
 salary_test=pd.read_csv("file:///F:/ASSIGNMENTS/support vector machines/SalaryData_Test(1).csv")
 
