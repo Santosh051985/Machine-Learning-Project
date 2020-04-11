@@ -1,4 +1,4 @@
-# imporing XGBOOST for enhance accuracy
+# imporing XGBOOST for enhance Accuracy
 import xgboost as xgb
 # importing Pandas for manipulate dataset
 import pandas as pd
