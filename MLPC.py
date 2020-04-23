@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 wbcd = pd.read_csv("C:\\Users\\HP\\Desktop\\wbcd.csv")
 # Shows features of dataset
 wbcd.columns
-# Dropping the  column which has not involve in calculation
+# Dropping the column which has not involve in calculation
 wbcd.drop(["id"],axis=1,inplace=True) 
 # Handle No missing values ######
 wbcd.isnull().sum() 
@@ -23,7 +23,7 @@ wbcd.diagnosis.value_counts()
 from sklearn.cross_validation import train_test_split
 
 X_train, X_test, y_train, y_test = train_test_split(X, Y)
-
+# Feature Scaler
 from sklearn.preprocessing import StandardScaler
 scaler = StandardScaler()
 scaler.fit(X_train)
