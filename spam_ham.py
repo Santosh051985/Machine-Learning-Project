@@ -20,6 +20,7 @@ def cleaning_text(i):
     i = re.sub("[^A-Za-z" "]+"," ",i).lower()
     i = re.sub("[0-9" "]+"," ",i)
     w = []
+    # for loop uses
     for word in i.split(" "):
         if len(word)>3:
             w.append(word)
