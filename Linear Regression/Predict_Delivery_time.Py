@@ -1,4 +1,4 @@
-# Import Pandas for data manipulation
+# Import Pandas for data manipulation on data frame
 import pandas as pd
 #Import Matplotlib package
 import matplotlib.pyplot  as plt
