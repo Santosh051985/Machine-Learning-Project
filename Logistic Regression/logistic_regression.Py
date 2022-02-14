@@ -1,4 +1,4 @@
-# Import Pandas, Numpy and Seaborn library 
+# Import Pandas, Numpy and Seaborn library
 import pandas as pd
 import numpy as np
 import seaborn as sb
@@ -11,7 +11,7 @@ from sklearn import metrics
 from sklearn import preprocessing
 from sklearn.metrics import classification_report
 
-# loading claimants data 
+# loading claimants data set for analysis
 
 claimants = pd.read_csv("claimants.csv")
 
